@@ -22,27 +22,28 @@ CREATE EC2
 IN AWS
 1. Search "EC2" and select launch instance
 2. Enter a Name
-3. Select "Amazon Linux 2023 AMI"
-4. In Instance type select, "t2.micro"
-5. Under key pair, select "create a new key pair"
+3. CLick "Browse More AMIs and search for Centos under "AWS MarketPlace AMI"
+4. Select Ubuntu Server 22.04 "FREE TIER"
+5. In Instance type select, "t2.micro" "FREE TIER ELIGIBLE"
+6. Under key pair, select "create a new key pair"
    Give the key pair a name
     Select RSA
     Private key: .pem
     Select "Create Key Pair
     The key pair will be downloaded
-6. Under Network settings
+7. Under Network settings
    Check "Allow SSH traffic from" select MY IP
-7. Click Launch Instance
-8. Go to the Instance you created and wait until the instance state is "running" and status check is in green
-9. Click on The Instance 
+8. Click Launch Instance
+9.  Go to the Instance you created and wait until the instance state is "running" and status check is in green
+10. Click on The Instance 
     Security
     Under security groups and select the security group name
     Under inbound rules, select "edit inbound rules"
     Select "add rule" and add the following rules:
         type: SSH           Source: MyIP
-        type: Custom TCP          Source: MyIP
+        type: HTTP        Source: MyIP
 
- 10. Go to your Instance
+ 11. Go to your Instance
         Click Connect
         Under SSH Client, copy the ssh -i..... that is under example.
 
@@ -54,12 +55,22 @@ SSH
    chmod 400 nameofkeypair.pem, then past the ssh link again
    
 Adding HTML Files
+Go to www.tooplate.com and download the file in this link:
+    https://www.tooplate.com/view/2137-barista-cafe
+    Make sure that it is saved in the same folder that you're working in i.e. what ever folder you cd into.
 Paste the following command to check if httpd is active
 sudo apt update
-sudo apt install apahe2 wget unzip -y
+sudo apt install apache2 wget unzip -y
 wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip
 unzip 2137_barista_cafe
+ls
+cp -r 2137_barista_cafe/* /var/www/html
+systemctl restart apache2
 
+Go to EC2 instance in AWS. 
+    Copy the public IPV4 address and paste it in your browser. The website should be up and running.
+
+    Make sure that you terminate your instance.
 
 
 
