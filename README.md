@@ -70,7 +70,10 @@ Go to EC2 instance in AWS.
 
     Make sure that you terminate your instance.
 
+    
+Once done, your website should look like this:
 
+![Barista](https://github.com/Marie623/How-to-Create-Static-Website-AWS-VS-Code/assets/135767885/557b7b4d-f7a1-4f1d-8414-23db982cfe7b)
 
 
 
