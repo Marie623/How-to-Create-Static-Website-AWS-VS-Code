@@ -73,7 +73,11 @@ Go to EC2 instance in AWS.
     
 Once done, your website should look like this:
 
-![Barista](https://github.com/Marie623/How-to-Create-Static-Website-AWS-VS-Code/assets/135767885/557b7b4d-f7a1-4f1d-8414-23db982cfe7b)
+![Screen Shot 2024-06-01 at 12 19 34 PM](https://github.com/Marie623/How-to-Create-Static-Website-AWS-VS-Code/assets/135767885/41863318-6c65-41a5-8002-873fdb755b36)
+
+![Screen Shot 2024-06-01 at 12 21 53 PM](https://github.com/Marie623/How-to-Create-Static-Website-AWS-VS-Code/assets/135767885/8131f9f8-bbde-4f77-94a2-afd137ac633d)
+
+![Screen Shot 2024-06-01 at 12 22 49 PM](https://github.com/Marie623/How-to-Create-Static-Website-AWS-VS-Code/assets/135767885/76fbc3f5-604e-43de-9842-f4efc4622982)
 
 
 
