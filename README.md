@@ -53,13 +53,20 @@ SSH
    chmod 400 nameofkeypair.pem, then past the ssh link again
    
 Adding HTML Files
+
 Go to www.tooplate.com and download the file in this link:
+
     https://www.tooplate.com/view/2137-barista-cafe
     Make sure that it is saved in the same folder that you're working in i.e. what ever folder you cd into.
+    
 Paste the following command to check if httpd is active
+
 a. sudo apt update
+
 b. sudo apt install apache2 wget unzip -y
+
 c. wget https://www.tooplate.com/zip-templates/2137_barista_cafe.zip
+
 d. unzip 2137_barista_cafe
 d. ls
 e. cp -r 2137_barista_cafe/* /var/www/html
